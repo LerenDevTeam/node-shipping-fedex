@@ -20240,9 +20240,9 @@ module.exports = {
 
     // Define as an anonymous module so, through path mapping, it can be
     // referenced as the "underscore" module.
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
       return _;
-    }.call(exports, __webpack_require__, exports, module),
+    }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
@@ -55296,9 +55296,9 @@ function mixin (target) {
 
     // Define as an anonymous module so, through path mapping, it can be
     // referenced as the "underscore" module.
-    !(__WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    !(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
       return _;
-    }.call(exports, __webpack_require__, exports, module),
+    }).call(exports, __webpack_require__, exports, module),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
   // Check for `exports` after `define` in case a build optimizer adds it.
@@ -70857,9 +70857,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
     }
     // AMD / RequireJS
     else if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
             return async;
-        }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+        }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
     }
     // included directly via <script> tag
@@ -71065,12 +71065,12 @@ class FedExAPI {
         const resource = {
             version: {
                 ServiceId: 'ship',
-                Major: 21,
+                Major: 28,
                 Intermediate: 0,
                 Minor: 0
             }
         };
-        this.request(params, 'processShipment', 'ShipService_v21.wsdl', resource, (err, res) => {
+        this.request(params, 'processShipment', 'ShipService_v28.wsdl', resource, (err, res) => {
             return cb(err, res);
         });
     }
@@ -81667,9 +81667,9 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;//     Underscor
   // an AMD load request. Those cases could generate an error when an
   // anonymous define() is called outside of a loader request.
   if (true) {
-    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function() {
+    !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function() {
       return _;
-    }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+    }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
   }
 }.call(this));
@@ -89492,9 +89492,9 @@ empty list will be returned. A validation error will have two properties:
 (function (root, factory) {
     if (true) {
         // AMD. Register as an anonymous module.
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = (function () {
             return factory();
-        }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+        }).apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
     } else if (typeof module === 'object' && module.exports) {
         // Node. Does not work with strict CommonJS, but
@@ -98727,7 +98727,7 @@ exports.debug = debug // for test
 /* 318 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"soap","version":"0.33.0","description":"A minimal node SOAP client","engines":{"node":">=4.0.0"},"author":"Vinay Pulim <v@pulim.com>","dependencies":{"bluebird":"^3.5.0","concat-stream":"^2.0.0","debug":"^4.1.1","httpntlm":"^1.5.2","lodash":"^4.17.19","request":">=2.9.0","sax":">=0.6","serve-static":"^1.11.1","strip-bom":"^3.0.0","uuid":"^3.1.0","xml-crypto":"^1.4.0"},"repository":{"type":"git","url":"https://github.com/vpulim/node-soap.git"},"main":"./index.js","types":"./lib/soap.d.ts","directories":{"lib":"./lib","test":"./test"},"scripts":{"prepare":"npm run build","build":"tsc -p .","clean":"rm -rf lib","watch":"tsc -w -p .","lint":"tslint -p tsconfig.json","toc":"./node_modules/.bin/doctoc Readme.md --github --maxlevel 3","cover":"nyc --extension=.ts --reporter=lcov --reporter=html --reporter=text mocha --timeout 15000 --exit test/*-test.js test/security/*.js","coveralls":"cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v","docs":"typedoc --out docs","test":"mocha --timeout 15000 --bail --exit test/*-test.js test/security/*.js"},"keywords":["soap"],"license":"MIT","devDependencies":{"@types/request":"^2.48.1","@types/bluebird":"^3.5.26","@types/debug":"^4.1.2","@types/express":"^4.16.1","@types/lodash":"^4.14.122","@types/node":"^11.11.0","@types/sax":"^1.0.1","@types/uuid":"^3.4.4","body-parser":"^1.15.2","colors":"^1.3.3","coveralls":"^3.0.5","diff":"^4.0.1","doctoc":"^1.4.0","duplexer":"~0.1.1","express":"^4.16.4","finalhandler":"^1.1.1","glob":"^7.1.3","jshint":"^2.10.1","mocha":"^6.1.4","nyc":"^14.1.1","readable-stream":"~2.0.2","semver":"^5.6.0","should":"^13.2.3","sinon":"^1.17.7","source-map-support":"^0.5.10","timekeeper":"^2.1.2","tslint":"^5.18.0","typedoc":"^0.14.2","typescript":"^3.3.3333"},"_resolved":"https://registry.npmjs.org/soap/-/soap-0.33.0.tgz","_integrity":"sha512-uxOGRVLeLe5thLXV9YSS9b2nNLHZySrW5ld1vTK45AbF2QHRiTBTlCiyg/0vvuW9pRENRPf4o8nt0xfFn+OGRQ==","_from":"soap@0.33.0"}
+module.exports = {"_args":[["soap@0.33.0","C:\\Users\\Lucas\\Documents\\code\\latinafy-exportalo\\node-shipping-fedex"]],"_from":"soap@0.33.0","_id":"soap@0.33.0","_inBundle":false,"_integrity":"sha512-uxOGRVLeLe5thLXV9YSS9b2nNLHZySrW5ld1vTK45AbF2QHRiTBTlCiyg/0vvuW9pRENRPf4o8nt0xfFn+OGRQ==","_location":"/soap","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"soap@0.33.0","name":"soap","escapedName":"soap","rawSpec":"0.33.0","saveSpec":null,"fetchSpec":"0.33.0"},"_requiredBy":["/"],"_resolved":"https://registry.npmjs.org/soap/-/soap-0.33.0.tgz","_spec":"0.33.0","_where":"C:\\Users\\Lucas\\Documents\\code\\latinafy-exportalo\\node-shipping-fedex","author":{"name":"Vinay Pulim","email":"v@pulim.com"},"bugs":{"url":"https://github.com/vpulim/node-soap/issues"},"dependencies":{"bluebird":"^3.5.0","concat-stream":"^2.0.0","debug":"^4.1.1","httpntlm":"^1.5.2","lodash":"^4.17.19","request":">=2.9.0","sax":">=0.6","serve-static":"^1.11.1","strip-bom":"^3.0.0","uuid":"^3.1.0","xml-crypto":"^1.4.0"},"description":"A minimal node SOAP client","devDependencies":{"@types/bluebird":"^3.5.26","@types/debug":"^4.1.2","@types/express":"^4.16.1","@types/lodash":"^4.14.122","@types/node":"^11.11.0","@types/request":"^2.48.1","@types/sax":"^1.0.1","@types/uuid":"^3.4.4","body-parser":"^1.15.2","colors":"^1.3.3","coveralls":"^3.0.5","diff":"^4.0.1","doctoc":"^1.4.0","duplexer":"~0.1.1","express":"^4.16.4","finalhandler":"^1.1.1","glob":"^7.1.3","jshint":"^2.10.1","mocha":"^6.1.4","nyc":"^14.1.1","readable-stream":"~2.0.2","semver":"^5.6.0","should":"^13.2.3","sinon":"^1.17.7","source-map-support":"^0.5.10","timekeeper":"^2.1.2","tslint":"^5.18.0","typedoc":"^0.14.2","typescript":"^3.3.3333"},"directories":{"lib":"./lib","test":"./test"},"engines":{"node":">=4.0.0"},"homepage":"https://github.com/vpulim/node-soap#readme","keywords":["soap"],"license":"MIT","main":"./index.js","name":"soap","repository":{"type":"git","url":"git+https://github.com/vpulim/node-soap.git"},"scripts":{"build":"tsc -p .","clean":"rm -rf lib","cover":"nyc --extension=.ts --reporter=lcov --reporter=html --reporter=text mocha --timeout 15000 --exit test/*-test.js test/security/*.js","coveralls":"cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js -v","docs":"typedoc --out docs","lint":"tslint -p tsconfig.json","prepare":"npm run build","test":"mocha --timeout 15000 --bail --exit test/*-test.js test/security/*.js","toc":"doctoc Readme.md --github --maxlevel 3","watch":"tsc -w -p ."},"types":"./lib/soap.d.ts","version":"0.33.0"}
 
 /***/ }),
 /* 319 */
@@ -104449,7 +104449,7 @@ exports.logger = new (winston.Logger)({
 /* 348 */
 /***/ (function(module, exports) {
 
-module.exports = {"name":"winston","description":"A multi-transport async logging library for Node.js","version":"2.3.1","author":"Charlie Robbins <charlie.robbins@gmail.com>","maintainers":["Jarrett Cruger <jcrugzz@gmail.com>","Alberto Pose <albertopose@gmail.com>"],"repository":{"type":"git","url":"https://github.com/winstonjs/winston.git"},"keywords":["winston","logging","sysadmin","tools"],"dependencies":{"async":"~1.0.0","colors":"1.0.x","cycle":"1.0.x","eyes":"0.1.x","isstream":"0.1.x","stack-trace":"0.0.x"},"devDependencies":{"cross-spawn-async":"^2.0.0","hock":"1.x.x","std-mocks":"~1.0.0","vows":"0.7.x"},"main":"./lib/winston","scripts":{"test":"vows --spec --isolate"},"engines":{"node":">= 0.10.0"},"license":"MIT","_resolved":"https://registry.npmjs.org/winston/-/winston-2.3.1.tgz","_integrity":"sha1-C0hCDZeMAYBM8CMLZIhhWYIloRk=","_from":"winston@2.3.1"}
+module.exports = {"_args":[["winston@2.3.1","C:\\Users\\Lucas\\Documents\\code\\latinafy-exportalo\\node-shipping-fedex"]],"_development":true,"_from":"winston@2.3.1","_id":"winston@2.3.1","_inBundle":false,"_integrity":"sha1-C0hCDZeMAYBM8CMLZIhhWYIloRk=","_location":"/winston","_phantomChildren":{},"_requested":{"type":"version","registry":true,"raw":"winston@2.3.1","name":"winston","escapedName":"winston","rawSpec":"2.3.1","saveSpec":null,"fetchSpec":"2.3.1"},"_requiredBy":["#DEV:/"],"_resolved":"https://registry.npmjs.org/winston/-/winston-2.3.1.tgz","_spec":"2.3.1","_where":"C:\\Users\\Lucas\\Documents\\code\\latinafy-exportalo\\node-shipping-fedex","author":{"name":"Charlie Robbins","email":"charlie.robbins@gmail.com"},"bugs":{"url":"https://github.com/winstonjs/winston/issues"},"dependencies":{"async":"~1.0.0","colors":"1.0.x","cycle":"1.0.x","eyes":"0.1.x","isstream":"0.1.x","stack-trace":"0.0.x"},"description":"A multi-transport async logging library for Node.js","devDependencies":{"cross-spawn-async":"^2.0.0","hock":"1.x.x","std-mocks":"~1.0.0","vows":"0.7.x"},"engines":{"node":">= 0.10.0"},"homepage":"https://github.com/winstonjs/winston#readme","keywords":["winston","logging","sysadmin","tools"],"license":"MIT","main":"./lib/winston","maintainers":[{"name":"Jarrett Cruger","email":"jcrugzz@gmail.com"},{"name":"Alberto Pose","email":"albertopose@gmail.com"}],"name":"winston","repository":{"type":"git","url":"git+https://github.com/winstonjs/winston.git"},"scripts":{"test":"vows --spec --isolate"},"version":"2.3.1"}
 
 /***/ }),
 /* 349 */

@@ -165,13 +165,13 @@ export default class FedExAPI {
     const resource = {
       version: {
         ServiceId: 'ship',
-        Major: 21,
+        Major: 28,
         Intermediate: 0,
         Minor: 0
       }
     };
 
-    this.request(params, 'processShipment', 'ShipService_v21.wsdl', resource, (err, res) => {
+    this.request(params, 'processShipment', 'ShipService_v28.wsdl', resource, (err, res) => {
       return cb(err, res);
     });
 
